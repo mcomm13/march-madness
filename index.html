@@ -22,7 +22,48 @@
     <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
+    <div class="flex-container">
+      <div class="team">
+        <div>
+          <select id="select-teamA"></select>
+        </div>
+        <div id="teamA-name" class="team__name">Team A</div>
+        <div id="teamA-seed" class="team__seed">Seed: 1</div>
+      </div>
+      <div class="versus">
+        vs.
+      </div>
+      <div class="team">
+        <div>
+          <select id="select-teamB"></select>
+        </div>
+        <div id="teamB-name" class="team__name">Team B</div>
+        <div id="teamB-seed" class="team__seed">Seed: 2</div>
+      </div>
+    </div>
+    <div class="container">
+      <p>
+        Historically, <strong class="high-seed-number">1st seed</strong> teams
+        have defeated <strong class="low-seed-number">2nd seed</strong> teams
+        <strong class="win-percentage">60%</strong> of the time, across
+        <span class="contest-count">100</span> total contests.
+      </p>
+      <p>
+        The button below will select a team randomly, with a
+        <strong class="win-percentage">60%</strong> chance of selecting
+        <strong class="high-seed-name">Team A</strong>.
+      </p>
+      <div class="button-container">
+        <button>Make Random Pick</button>
+      </div>
+      <div class="team picked-team">
+        <strong>Random pick: </strong><span id="random-pick">Team B</span>
+      </div>
+    </div>
     <script type="text/javascript" src="teams.js"></script>
     <script type="text/javascript" src="stats.js"></script>
+    <script type="text/javascript">
+      populateDropDowns();
+    </script>
   </body>
 </html>

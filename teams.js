@@ -1,3 +1,23 @@
+function populateDropDowns() {
+  const allTeams = getAllTeams();
+  const teamADropDown = document.getElementById('select-teamA');
+  const teamBDropDown = document.getElementById('select-teamB');
+  let optionA = null;
+  let optionB = null;
+
+  for (let i = 0; i < allTeams.length; i++) {
+    optionA = document.createElement('option');
+    optionA.value = allTeams[i].seed;
+    optionA.innerHTML = allTeams[i].name;
+    teamADropDown.appendChild(optionA);
+
+    optionB = document.createElement('option');
+    optionB.value = allTeams[i].seed;
+    optionB.innerHTML = allTeams[i].name;
+    teamBDropDown.appendChild(optionB);
+  }
+}
+
 function getAllTeams() {
   return [
     {

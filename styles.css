@@ -1,0 +1,36 @@
+.flex-container {
+  display: flex;
+}
+
+.container {
+  margin: 24px 12px;
+  text-align: center;
+}
+
+.button-container {
+  margin: 24px;
+}
+
+.team {
+  margin: 24px auto;
+  padding: 24px;
+}
+
+.versus {
+  margin: 24px auto;
+  padding: 24px;
+  font-size: 48px;
+}
+
+.team__name {
+  font-size: 32px;
+}
+
+.team__seed {
+  font-size: 24px;
+  text-align: center;
+}
+
+.picked-team {
+  font-size: 48px;
+}
