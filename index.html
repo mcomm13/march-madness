@@ -19,6 +19,22 @@
       href="favicon.ico"
       type="image/vnd.microsoft.icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
@@ -54,12 +70,22 @@
         <strong class="high-seed-name">Team A</strong>.
       </p>
       <div class="button-container">
-        <button>Make Random Pick</button>
+        <button class="btn btn-primary">Make Random Pick</button>
       </div>
       <div class="team picked-team">
-        <strong>Random pick: </strong><span id="random-pick">Team B</span>
+        <p><strong>Random pick: </strong></p>
+        <p id="random-pick" class="animated bounce">Team B</p>
       </div>
     </div>
+    <footer>
+      <p>
+        Basketball stats provided by
+        <a href="http://mcubed.net/ncaab/seeds.shtml" target="_blank"
+          >http://mcubed.net/ncaab/seeds.shtml</a
+        >
+      </p>
+    </footer>
+    <!-- JavaScript -->
     <script type="text/javascript" src="teams.js"></script>
     <script type="text/javascript" src="stats.js"></script>
     <script type="text/javascript">

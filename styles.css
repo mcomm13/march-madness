@@ -3,12 +3,11 @@
 }
 
 .container {
-  margin: 24px 12px;
   text-align: center;
 }
 
 .button-container {
-  margin: 24px;
+  margin: 48px 24px 24px;
 }
 
 .team {
@@ -24,6 +23,7 @@
 
 .team__name {
   font-size: 32px;
+  text-align: center;
 }
 
 .team__seed {
@@ -33,4 +33,17 @@
 
 .picked-team {
   font-size: 48px;
+}
+
+select {
+  width: 200px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 9px;
 }
