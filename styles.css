@@ -47,3 +47,7 @@ footer {
   bottom: 0;
   padding: 9px;
 }
+
+.inline-dynamic-value {
+  display: inline-block;
+}

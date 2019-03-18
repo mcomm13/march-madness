@@ -14,6 +14,9 @@ function populateDropDowns() {
     optionB = document.createElement('option');
     optionB.value = allTeams[i].seed;
     optionB.innerHTML = allTeams[i].name;
+    if (allTeams[i].name === 'NDS/NCC') {
+      optionB.setAttribute('selected', 'selected');
+    }
     teamBDropDown.appendChild(optionB);
   }
 }
@@ -21,259 +24,259 @@ function populateDropDowns() {
 function getAllTeams() {
   return [
     {
-      name: 'Team A',
+      name: 'Duke',
       seed: 1
     },
     {
-      name: 'Team A',
+      name: 'Gonzaga',
       seed: 1
     },
     {
-      name: 'Team A',
+      name: 'Virginia',
       seed: 1
     },
     {
-      name: 'Team A',
+      name: 'North Carolina',
       seed: 1
     },
     {
-      name: 'Team A',
+      name: 'Michigan State',
       seed: 2
     },
     {
-      name: 'Team A',
+      name: 'Michigan',
       seed: 2
     },
     {
-      name: 'Team A',
+      name: 'Tennessee',
       seed: 2
     },
     {
-      name: 'Team A',
+      name: 'Kentucky',
       seed: 2
     },
     {
-      name: 'Team A',
+      name: 'LSU',
       seed: 3
     },
     {
-      name: 'Team A',
+      name: 'Texas Tech',
       seed: 3
     },
     {
-      name: 'Team A',
+      name: 'Purdue',
       seed: 3
     },
     {
-      name: 'Team A',
+      name: 'Houston',
       seed: 3
     },
     {
-      name: 'Team A',
+      name: 'Virginia Tech',
       seed: 4
     },
     {
-      name: 'Team A',
+      name: 'Florida St',
       seed: 4
     },
     {
-      name: 'Team A',
+      name: 'Kansas St',
       seed: 4
     },
     {
-      name: 'Team A',
+      name: 'Kansas',
       seed: 4
     },
     {
-      name: 'Team A',
+      name: 'Mississippi St',
       seed: 5
     },
     {
-      name: 'Team A',
+      name: 'Marquette',
       seed: 5
     },
     {
-      name: 'Team A',
+      name: 'Wisconsin',
       seed: 5
     },
     {
-      name: 'Team A',
+      name: 'Auburn',
       seed: 5
     },
     {
-      name: 'Team A',
+      name: 'Maryland',
       seed: 6
     },
     {
-      name: 'Team A',
+      name: 'Buffalo',
       seed: 6
     },
     {
-      name: 'Team A',
+      name: 'Villanova',
       seed: 6
     },
     {
-      name: 'Team A',
+      name: 'Iowa State',
       seed: 6
     },
     {
-      name: 'Team A',
+      name: 'Louisville',
       seed: 7
     },
     {
-      name: 'Team A',
+      name: 'Nevada',
       seed: 7
     },
     {
-      name: 'Team A',
+      name: 'Cincinnati',
       seed: 7
     },
     {
-      name: 'Team A',
+      name: 'Wofford',
       seed: 7
     },
     {
-      name: 'Team A',
+      name: 'VCU',
       seed: 8
     },
     {
-      name: 'Team A',
+      name: 'Syracuse',
       seed: 8
     },
     {
-      name: 'Team A',
+      name: 'Ole Miss',
       seed: 8
     },
     {
-      name: 'Team A',
+      name: 'Utah State',
       seed: 8
     },
     {
-      name: 'Team A',
+      name: 'UCF',
       seed: 9
     },
     {
-      name: 'Team A',
+      name: 'Baylor',
       seed: 9
     },
     {
-      name: 'Team A',
+      name: 'Oklahoma',
       seed: 9
     },
     {
-      name: 'Team A',
+      name: 'Washington',
       seed: 9
     },
     {
-      name: 'Team A',
+      name: 'Minnesota',
       seed: 10
     },
     {
-      name: 'Team A',
+      name: 'Florida',
       seed: 10
     },
     {
-      name: 'Team A',
+      name: 'Iowa',
       seed: 10
     },
     {
-      name: 'Team A',
+      name: 'Seton Hall',
       seed: 10
     },
     {
-      name: 'Team A',
+      name: 'BEL/TEM',
       seed: 11
     },
     {
-      name: 'Team A',
+      name: 'ASU/SJU',
       seed: 11
     },
     {
-      name: 'Team A',
+      name: "Saint Mary's",
       seed: 11
     },
     {
-      name: 'Team A',
+      name: 'Ohio State',
       seed: 11
     },
     {
-      name: 'Team A',
+      name: 'Liberty',
       seed: 12
     },
     {
-      name: 'Team A',
+      name: 'Murray State',
       seed: 12
     },
     {
-      name: 'Team A',
+      name: 'Oregon',
       seed: 12
     },
     {
-      name: 'Team A',
+      name: 'New Mexico St',
       seed: 12
     },
     {
-      name: 'Team A',
+      name: 'Saint Louis',
       seed: 13
     },
     {
-      name: 'Team A',
+      name: 'Vermont',
       seed: 13
     },
     {
-      name: 'Team A',
+      name: 'UC Irvine',
       seed: 13
     },
     {
-      name: 'Team A',
+      name: 'Northeastern',
       seed: 13
     },
     {
-      name: 'Team A',
+      name: 'Yale',
       seed: 14
     },
     {
-      name: 'Team A',
+      name: 'N Kentucky',
       seed: 14
     },
     {
-      name: 'Team A',
+      name: 'Old Dominion',
       seed: 14
     },
     {
-      name: 'Team A',
+      name: 'Georgia State',
       seed: 14
     },
     {
-      name: 'Team A',
+      name: 'Bradley',
       seed: 15
     },
     {
-      name: 'Team A',
+      name: 'Montana',
       seed: 15
     },
     {
-      name: 'Team A',
+      name: 'Colgate',
       seed: 15
     },
     {
-      name: 'Team A',
+      name: 'Abil Christian',
       seed: 15
     },
     {
-      name: 'Team A',
+      name: 'NDS/NCC',
       seed: 16
     },
     {
-      name: 'Team A',
+      name: 'FDU/PV',
       seed: 16
     },
     {
-      name: 'Team A',
+      name: 'Gardner-Webb',
       seed: 16
     },
     {
-      name: 'Team A',
+      name: 'Iona',
       seed: 16
     }
   ];

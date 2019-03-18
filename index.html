@@ -36,40 +36,52 @@
     <div class="flex-container">
       <div class="team">
         <div>
-          <select id="select-teamA"></select>
+          <select id="select-teamA" onchange="handleSelections()"></select>
         </div>
-        <div id="teamA-name" class="team__name">Team A</div>
-        <div id="teamA-seed" class="team__seed">Seed: 1</div>
+        <div id="teamA-name" class="team__name"></div>
+        <div id="teamA-seed" class="team__seed"></div>
       </div>
       <div class="versus">
         vs.
       </div>
       <div class="team">
         <div>
-          <select id="select-teamB"></select>
+          <select id="select-teamB" onchange="handleSelections()"></select>
         </div>
-        <div id="teamB-name" class="team__name">Team B</div>
-        <div id="teamB-seed" class="team__seed">Seed: 2</div>
+        <div id="teamB-name" class="team__name"></div>
+        <div id="teamB-seed" class="team__seed"></div>
       </div>
     </div>
     <div class="container">
       <p>
-        Historically, <strong class="high-seed-number">1st seed</strong> teams
-        have defeated <strong class="low-seed-number">2nd seed</strong> teams
-        <strong class="win-percentage">60%</strong> of the time, across
-        <span class="contest-count">100</span> total contests.
+        Historically,
+        <strong class="high-seed-number inline-dynamic-value">1st seed</strong>
+        teams have defeated
+        <strong class="low-seed-number inline-dynamic-value">2nd seed</strong>
+        teams
+        <strong class="win-percentage inline-dynamic-value">60%</strong>
+        of the time, across
+        <strong class="contest-count inline-dynamic-value">100</strong>
+        total contests.
       </p>
       <p>
         The button below will select a team randomly, with a
-        <strong class="win-percentage">60%</strong> chance of selecting
-        <strong class="high-seed-name">Team A</strong>.
+        <strong class="win-percentage inline-dynamic-value">60%</strong>
+        chance of selecting
+        <strong class="high-seed-name inline-dynamic-value">Team A</strong>.
       </p>
       <div class="button-container">
-        <button class="btn btn-primary">Make Random Pick</button>
+        <button class="btn btn-primary" onclick="makeRandomPick()">
+          Make Random Pick
+        </button>
       </div>
-      <div class="team picked-team" hidden>
+      <div
+        class="team picked-team"
+        id="picked-team-container"
+        style="display: none"
+      >
         <p><strong>Random pick: </strong></p>
-        <p id="random-pick" class="animated bounce">Team B</p>
+        <p id="random-pick" class="animated tada">Team B</p>
       </div>
     </div>
     <footer>
@@ -79,6 +91,7 @@
           >http://mcubed.net/ncaab/seeds.shtml</a
         >
       </p>
+      <p>&copy; 2019 Michael Commendatore</p>
     </footer>
     <!-- JavaScript -->
     <script type="text/javascript" src="teams.js"></script>
@@ -86,6 +99,7 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript">
       populateDropDowns();
+      handleSelections();
     </script>
   </body>
 </html>

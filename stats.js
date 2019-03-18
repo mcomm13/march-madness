@@ -3,6 +3,8 @@ function getWinOdds(teamA, teamB) {
   const lowSeed = teamA.seed > teamB.seed ? teamA.seed : teamB.seed;
   let highSeedWinPercentage = 100;
   let totalContests = 0;
+  const highSeedName = teamA.seed <= teamB.seed ? teamA.name : teamB.name;
+  const lowSeedName = teamA.seed > teamB.seed ? teamA.name : teamB.name;
 
   if (highSeed === 1) {
     if (lowSeed === 1) {
@@ -478,6 +480,10 @@ function getWinOdds(teamA, teamB) {
 
   return {
     highSeedWinPercentage: highSeedWinPercentage,
-    totalContests: totalContests
+    totalContests: totalContests,
+    highSeedNumber: highSeed,
+    lowSeedNumber: lowSeed,
+    highSeedName: highSeedName,
+    lowSeedName: lowSeedName
   };
 }
