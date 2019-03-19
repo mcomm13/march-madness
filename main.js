@@ -19,6 +19,7 @@ function makeRandomPick() {
   randomIndex = Math.floor(Math.random() * 101);
   randomPick = pickPool[randomIndex];
   document.getElementById('picked-team-container').style.display = 'block';
+  document.getElementById('random-pick').innerHTML = randomPick;
 }
 
 function handleSelections() {
