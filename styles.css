@@ -6,8 +6,9 @@
   text-align: center;
 }
 
-.button-container {
-  margin: 48px 24px 24px;
+.button-container,
+.input-container {
+  margin: 36px;
 }
 
 .team {
@@ -31,7 +32,8 @@
   text-align: center;
 }
 
-.picked-team {
+.picked-team,
+.picked-number {
   font-size: 48px;
 }
 
